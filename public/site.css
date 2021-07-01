@@ -1,0 +1,20 @@
+
+
+
+
+header {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fafaf8;
+    padding: 10px;
+  }
+
+  main {
+    display: block;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    min-height: 85%;
+  }

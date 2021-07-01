@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+  }
+
+
+table.scroll {
+    width: 100%;
+    border-spacing: 0;
+    border: 2px solid black;
+}
+
+table.scroll th,
+table.scroll td,
+table.scroll tr,
+table.scroll thead,
+table.scroll tbody { display: block; }
+
+table.scroll thead tr {
+    /* fallback */
+    width: 97%;
+    /* minus scroll bar width */
+    width: -webkit-calc(100% - 16px);
+    width:    -moz-calc(100% - 16px);
+    width:         calc(100% - 16px);
+}
+
+table.scroll tr:after {
+    content: ' ';
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+
+table.scroll tbody {
+    height: 100px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+table.scroll tbody td,
+table.scroll thead th {
+    width: 19%;
+    float: left;
+    border-right: 1px solid black;
+}
+
+thead tr th { 
+    height: 30px;
+    line-height: 30px;
+    /*text-align: left;*/
+}
+
+tbody { border-top: 2px solid black; }
+
+tbody td:last-child, thead th:last-child {
+    border-right: none !important;
+}
+
+header {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #979792;
+    padding: 10px;
+  }
+
+  
+  html,
+  body {
+    height: 100%;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(248, 242, 242);
+  }
+  
+  input {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 3px;
+  }
+  label {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 3px;
+  }
+
+  input[type=submit] {
+    padding:5px 15px; 
+    background:#ccc; 
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+}
+
+button {
+    padding:5px 15px; 
+    background:#ccc; 
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+  }
+
+  .bonusbuttons {
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+    background-color: gray;
+    border: solid 1px #ccc;
+  }
+  .bonusbuttons .columns div {
+    width: 50%;
+  }
+  
+  .column {
+    float: left;
+    width: 50%;
+    padding: 3px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
